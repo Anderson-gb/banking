@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'authentication',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,10 +76,11 @@ WSGI_APPLICATION = 'banking.wsgi.application'
 DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.postgresql',
+         'HOST': 'localhost',
          'NAME':  'banking',
          'USER': 'postgres',
          'PASSWORD': 'unicesmag',
-         'PORT': '5432',
+         'PORT': '5433',
      },
     
 
